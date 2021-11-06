@@ -6,23 +6,23 @@
         "Music",
         "Songdl",
         "Telegram Bot",
-        "JE Bots"
+        "Vd Bots"
     ],
     "website": "https://infinityje.com",
-    "repository": "https://github.com/ImJanindu/Songdl-tgbot",
-    "success_url": "https://t.me/Infinity_BOTs",
+    "repository": "https://github.com/VenujaBots/VdSongBot",
+    "success_url": "https://t.me/vndsongbot",
     "env": {
         "TG_BOT_TOKEN": {
             "description": "You Telegram Bot Token from @BotFather",
-            "value": ""
+            "value": "2105578077:AAHIQKleAfQKq4Z55nEyT26ntYlEe9sycyQ"
         },
         "API_HASH": {
             "description": "Your API Hash from my.telegram.org",
-            "value": ""
+            "value": "cd3998ddf318dad74d7c506731bc0abc"
         },
         "APP_ID": {
             "description": "Your APP ID from my.telegram.org",
-            "value": ""
+            "value": "7395896"
         }
     },
     "addons": [],

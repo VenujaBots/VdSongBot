@@ -1,5 +1,5 @@
 {
-    "name": "Song Downloader Bot",
+    "name": "Vd Song Bot",
     "description": "A bot that can download song you want.",
     "logo": "https://telegra.ph/file/4501aa5bd83bdcefa658d.jpg",
     "keywords": [
@@ -8,21 +8,21 @@
         "Telegram Bot",
         "Vd Bots"
     ],
-    "website": "https://infinityje.com",
+    "website": "",
     "repository": "https://github.com/VenujaBots/VdSongBot",
     "success_url": "https://t.me/vndsongbot",
     "env": {
         "TG_BOT_TOKEN": {
             "description": "You Telegram Bot Token from @BotFather",
-            "value": "2105578077:AAHIQKleAfQKq4Z55nEyT26ntYlEe9sycyQ"
+            "value": ""
         },
         "API_HASH": {
             "description": "Your API Hash from my.telegram.org",
-            "value": "cd3998ddf318dad74d7c506731bc0abc"
+            "value": ""
         },
         "APP_ID": {
             "description": "Your APP ID from my.telegram.org",
-            "value": "7395896"
+            "value": ""
         }
     },
     "addons": [],

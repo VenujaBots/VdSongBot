@@ -223,9 +223,9 @@ Hit help button to find out more about how to use me</b>""",
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/vndbotsupport")
+                                            "Channel", url="https://t.me/vndbotsupport"),
                                         InlineKeyboardButton(
-                                            "➕ Add Me To Your Group ➕", url="http://t.me/VndTranslateBot?startgroup=true")
+                                            "➕ Add Me To Your Group ➕", url="http://t.me/VndTranslateBot?startgroup=true"),
                                     ]]]
                             ),        
             disable_web_page_preview=True,        

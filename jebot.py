@@ -56,7 +56,7 @@ async def song(client, message):
     try:
         url = q[0]["link"]
     except BaseException:
-        return await rkp.edit("Failed to find that song.")
+        return await rkp.edit("❌Failed to find that song.")
     type = "audio"
     if type == "audio":
         opts = {
@@ -132,7 +132,7 @@ async def song(client, message):
     url = message.text.split(None, 1)[1]
     rkp = await message.reply("Processing...")
     if not url:
-        await rkp.edit("**What's the song you want?**\nUsage`/song <song name>`")
+        await rkp.edit("**What's the song you want?**\nUsage```/song <song name>```")
     search = SearchVideos(url, offset=1, mode="json", max_results=1)
     test = search.result()
     p = json.loads(test)
@@ -140,7 +140,7 @@ async def song(client, message):
     try:
         url = q[0]["link"]
     except BaseException:
-        return await rkp.edit("Failed to find that song.")
+        return await rkp.edit("❌Failed to find that song.")
     type = "audio"
     if type == "audio":
         opts = {
@@ -219,12 +219,14 @@ async def start(client, message):
 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
-                                [[
+                                [[[
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/vndtranslatebotsupport")
-                                    ]]
+                                            "Channel", url="https://t.me/vndbotsupport")
+                                        InlineKeyboardButton(
+                                            "➕ Add Me To Your Group ➕", url="http://t.me/VndTranslateBot?startgroup=true")
+                                    ]]]
                             ),        
             disable_web_page_preview=True,        
             parse_mode="html",
@@ -234,7 +236,7 @@ Hit help button to find out more about how to use me</b>""",
 
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Wait Your Song is Downloading.\n\n</b>""",   
+               text="""<b>Wait Your Song is Downloading...\n\n</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -252,15 +254,15 @@ async def help(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Send a song name to download song
+               text="""<b>Send a song name to download song. 
 
-@Venuja_Sadew</b>""",
+By @Venuja_Sadew</b>""",
             reply_to_message_id=message.message_id
         )
     else:
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="<b>Song Downloader Help.\n\nSyntax: `/song guleba`</b>",
+               text="<b>Song Downloader Help.\n\nSyntax: ```/song guleba```</b>",
             reply_to_message_id=message.message_id
         )     
         
